@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Макарон ручной работы в Крыму. Нежные вкусы, авторские наборы и подарочные коробочки.">
+<title>Макарон ручной работы в Крыму — Maville Desserts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fff9ef;--pink:#f8d8d5;--pink2:#e8899b;--ink:#382821;--muted:#76665e;--yellow:#ffebb0;--sage:#e0ebd0;--line:#eadccf}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+.announcement{background:#593a2a;color:#fff5eb;text-align:center;padding:9px 12px;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+header{background:rgba(255,249,239,.95);position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);border-bottom:1px solid #eee1d5}
+.nav{max-width:1180px;margin:auto;padding:17px 25px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:29px;font-weight:700;color:#d9798b;line-height:.9}.logo small{display:block;font:9px Manrope,sans-serif;letter-spacing:.22em;color:#8d7970;text-transform:uppercase;margin-top:7px}
+.navlinks{display:flex;align-items:center;gap:25px;font-size:12px}.navlinks a:hover{color:#d9798b}.cart{border:0;background:transparent;color:var(--ink);font-size:12px}.count{display:inline-flex;align-items:center;justify-content:center;background:#e8899b;color:white;border-radius:50%;width:20px;height:20px;margin-left:5px}
+.hero{max-width:1180px;margin:auto;padding:30px 25px 44px}.hero-card{position:relative;overflow:hidden;min-height:490px;background:#f9d7d5;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:55px 7%;isolation:isolate}
+.hero-card:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 18% 15%,#ffe9e4 0,transparent 43%),radial-gradient(ellipse at 85% 90%,#f6c2c5 0,transparent 45%);z-index:-2}
+.brush{position:absolute;inset:12px;border:1px solid #fff4ed8c;pointer-events:none;z-index:-1}
+.kicker{font-size:10px;text-transform:uppercase;letter-spacing:.2em;color:#a95e68;font-weight:700}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600}h1{font-size:clamp(48px,6vw,76px);line-height:.91;letter-spacing:-.035em;margin:20px 0;color:#3c2922}h1 em{font-style:normal;color:#d96f85}
+.hero p{font-size:13px;line-height:1.9;color:#6e5850;max-width:390px}
+.button{display:inline-block;background:#e77e94;color:white;padding:14px 23px;border-radius:30px;font-size:11px;font-weight:700;border:0;box-shadow:0 8px 18px #cf7a862b;transition:.2s}.button:hover{background:#cf637c;transform:translateY(-2px)}
+.hero-actions{display:flex;align-items:center;gap:22px;margin-top:24px;flex-wrap:wrap}.underlink{font-size:11px;border-bottom:1px solid #dc8c99;padding-bottom:4px;font-weight:700}
+.hero-photo-wrap{position:relative;display:flex;align-items:center;justify-content:center;min-height:365px}
+.hero-photo{width:min(100%,440px);height:390px;object-fit:cover;border-radius:48% 48% 8px 8px;box-shadow:0 18px 40px #8b5a4630;border:8px solid #fff8ef}
+.sticker{position:absolute;bottom:7px;left:0;background:#fff9ef;padding:15px 19px;box-shadow:0 9px 25px #75504422;transform:rotate(-5deg);font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1}.sticker small{display:block;font:9px Manrope,sans-serif;color:#8d7970;margin-top:7px}
+.benefits{display:flex;gap:24px;margin-top:32px;flex-wrap:wrap}.benefit{display:flex;align-items:center;gap:10px;max-width:180px}.benefit-icon{width:42px;height:42px;border-radius:50%;background:#ffedba;display:grid;place-items:center;font-size:20px}.benefit:nth-child(2) .benefit-icon{background:#e0ebd0}.benefit b{font-size:10px;display:block}.benefit span{font-size:9px;color:#7a6960;line-height:1.5;display:block;margin-top:3px}
+.section{padding:68px 25px}.inner{max-width:1130px;margin:auto}.section-head{text-align:center;margin-bottom:31px}.section-head .kicker{margin-bottom:9px}h2{font-size:clamp(38px,4vw,52px);line-height:1;margin:0}.section-head p{font-size:12px;line-height:1.8;color:var(--muted);max-width:480px;margin:14px auto 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border-radius:19px;padding:17px 17px 20px;text-align:center;overflow:hidden;transition:transform .25s}.card:hover{transform:translateY(-5px)}.card:nth-child(1){background:#f9dce0}.card:nth-child(2){background:#ffebb4}.card:nth-child(3){background:#e2edcf}
+.card h3{font-size:28px;margin:0 0 13px}.card img{width:100%;height:210px;object-fit:cover;border-radius:12px;display:block;background:#f7e8dc}.card p{font-size:11px;line-height:1.6;color:#78655c;min-height:35px}.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px}.price{font-size:12px;font-weight:700}.add{background:transparent;border:0;color:#c96d80;font-size:11px;font-weight:700}.card:nth-child(2) .add{color:#b78325}.card:nth-child(3) .add{color:#72905e}
+.story{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:55px}.story-img{width:100%;height:360px;object-fit:cover;border-radius:48% 48% 8px 8px}.story-copy h2{margin:12px 0 18px}.story-copy h2 em{font-style:normal;color:#d9798b}.story-copy p{font-size:12px;line-height:1.9;color:var(--muted)}.story-note{margin-top:20px;border-left:2px solid #e8899b;padding-left:14px;font-family:"Cormorant Garamond",serif;font-size:21px}
+.order{background:#fff0cf;text-align:center}.order p{max-width:520px;margin:15px auto 28px;color:var(--muted);font-size:12px;line-height:1.8}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left;margin-top:35px}.step{padding:20px;background:#fff9ef;border-radius:14px}.num{font-family:"Cormorant Garamond",serif;font-size:33px;color:#dc8292}.step h3{font-size:23px;margin:4px 0}.step p{font-size:11px;margin:0}
+.contact{text-align:center;background:#e4ecd8}.contact p{font-size:12px;color:#64725a;line-height:1.8}.socials{display:flex;justify-content:center;gap:12px;margin-top:20px}.socials a{border:1px solid #aab89c;border-radius:50%;width:38px;height:38px;display:grid;place-items:center;font-size:12px}
+footer{background:#593a2a;color:#fff4e8;padding:23px 25px}.footer-inner{max-width:1130px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:10px;color:#e0cfc1}.footer-logo{font-family:"Cormorant Garamond",serif;font-size:23px;color:white}
+.cart-panel{position:fixed;z-index:30;right:16px;top:85px;width:min(370px,calc(100vw - 32px));max-height:calc(100vh - 100px);overflow:auto;background:#fffdf8;border:1px solid var(--line);box-shadow:0 20px 60px #38282135;padding:22px;display:none}.cart-panel.open{display:block}.cart-top{display:flex;justify-content:space-between;align-items:center}.cart-top h3{font-size:29px;margin:0}.close{border:0;background:none;font-size:25px}.cart-line{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:12px}.cart-line button{border:0;background:none;color:#c96d80}.total{display:flex;justify-content:space-between;font-weight:700;margin:17px 0}.full{width:100%}.small{font-size:10px;line-height:1.6;color:var(--muted)}.empty{font-size:12px;color:var(--muted);line-height:1.8}
+@media(max-width:760px){.nav{padding:14px 17px}.navlinks{display:none}.logo{font-size:25px}.hero{padding:18px 14px 35px}.hero-card{grid-template-columns:1fr;padding:37px 25px 25px;gap:20px}.hero-photo-wrap{min-height:300px}.hero-photo{height:320px;width:min(100%,360px)}.sticker{left:0}.benefits{gap:13px}.benefit{max-width:155px}.section{padding:53px 18px}.cards{grid-template-columns:1fr;gap:14px}.card img{height:250px}.story{grid-template-columns:1fr;gap:28px}.story-img{height:300px}.steps{grid-template-columns:1fr;gap:12px}.footer-inner{flex-direction:column;text-align:center}}
+
+
+.gallery{background:#fffaf4}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:14px}
+.gallery-item{position:relative;overflow:hidden;border-radius:16px;background:#f4e2df}
+.gallery-item:first-child{grid-row:span 2}
+.gallery-item:nth-child(4){grid-column:span 2}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s}
+.gallery-item:hover img{transform:scale(1.045)}
+.gallery-caption{position:absolute;left:0;right:0;bottom:0;padding:25px 13px 13px;background:linear-gradient(transparent,#35221dc9);color:#fff;font-size:11px;letter-spacing:.03em}
+@media(max-width:760px){.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px;gap:10px}.gallery-item:first-child{grid-row:span 2}.gallery-item:nth-child(4){grid-column:span 1}.gallery-item:nth-child(5){grid-column:span 2}}
+
+.pricing{background:#fff9ef}.price-layout{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}.price-box{background:#f9dce0;border-radius:18px;padding:23px}.mix-box{background:#e2edcf}.price-box h3{font-size:30px;margin:0 0 13px}.price-row{display:grid;grid-template-columns:1fr auto 28px;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #8b6c6330;font-size:12px}.price-row strong{font-size:13px;white-space:nowrap}.price-row .add{font-size:20px;width:28px;height:28px;border-radius:50%;background:#fff9ef}.availability{display:flex;gap:16px;align-items:flex-start;margin-top:22px;background:#fff0cf;padding:22px;border-radius:16px}.availability-icon{font-size:25px;color:#bc7c54}.availability h3{font-size:25px;margin:0 0 7px}.availability p{font-size:12px;line-height:1.85;color:#76665e;margin:0}.flavors{background:#f8e4e1}.flavor-list{display:flex;flex-wrap:wrap;justify-content:center;gap:9px}.flavor-list span{background:#fff9ef;border:1px solid #ead6d0;border-radius:30px;padding:10px 14px;font-size:11px;color:#604a43}.flavor-list span:nth-child(3n){background:#e2edcf}.flavor-list span:nth-child(3n + 1){background:#fff0cf}.flavor-note{text-align:center;font-size:12px;line-height:1.8;color:#76665e;margin:24px auto 0;max-width:620px}
+@media(max-width:760px){.price-layout{grid-template-columns:1fr}.price-box{padding:18px}.price-row{font-size:11px;gap:7px}.price-row strong{font-size:12px}.availability{padding:17px}.availability h3{font-size:23px}.flavor-list{gap:7px}.flavor-list span{font-size:10px;padding:9px 11px}}
+
+</style>
+</head>
+<body>
+<div class="announcement">Нежные десерты ручной работы · Крым</div>
+<header><nav class="nav">
+<a class="logo" href="#home">Maville Desserts<small>макарон ручной работы</small></a>
+<div class="navlinks"><a href="#catalog">Макарон</a><a href="#prices">Цены</a><a href="#flavors">Вкусы</a><a href="#about">О нас</a><a href="#order">Как заказать</a><a href="#contacts">Контакты</a></div>
+<button class="cart" id="openCart">Корзина <span class="count" id="count">0</span></button>
+</nav></header>
+<main>
+<section class="hero" id="home"><div class="hero-card"><div class="brush"></div>
+<div><div class="kicker">С любовью · Вручную · В Крыму</div>
+<h1>Маленькие<br>моменты<br><em>счастья.</em></h1>
+<p>Авторские макарон с нежными начинками, выразительными вкусами и красивой подачей. Десерты, которые хочется дарить — и оставлять себе.</p>
+<div class="hero-actions"><a class="button" href="#catalog">Выбрать макарон →</a><a class="underlink" href="#about">Наша история ↗</a></div>
+<div class="benefits"><div class="benefit"><div class="benefit-icon">♡</div><div><b>Сделано с любовью</b><span>Каждый десерт — вручную</span></div></div><div class="benefit"><div class="benefit-icon">✿</div><div><b>Красивые наборы</b><span>Для подарков и особых дат</span></div></div></div>
+</div><div class="hero-photo-wrap"><img class="hero-photo" src="images/instagram_box_macarons.jpg" alt="Подарочная коробка макарон с розовыми и бирюзовыми крышечками"><div class="sticker">Маленькое счастье<small>в каждой коробочке ♡</small></div></div>
+</div></section>
+
+<section class="section" id="catalog"><div class="inner"><div class="section-head"><div class="kicker">Коллекция вкусов</div><h2>Найди свой любимый</h2><p>Выбирай количество, собирай ассорти и сочетай макарон с моти. Ниже — актуальные цены и список вкусов.</p></div>
+<div class="cards">
+<article class="card"><h3>Макарон</h3><img src="images/instagram_plate_macarons.jpg" alt="Разноцветные макарон ручной работы"><p>Набор из любимых вкусов. Ассорти можно собрать индивидуально.</p><div class="card-bottom"><span class="price">от 1 350 ₽</span><button class="add" data-name="Макарон — количество уточнить">Выбрать +</button></div></article>
+<article class="card"><h3>Моти + макарон</h3><img src="images/instagram_chocolate_strawberry.jpg" alt="Набор шоколадных и клубничных десертов"><p>Микс нежных моти и макарон — для тех, кто любит разнообразие.</p><div class="card-bottom"><span class="price">от 1 600 ₽</span><button class="add" data-name="Микс моти + макарон — количество уточнить">Выбрать +</button></div></article>
+<article class="card"><h3>Ассорти на дату</h3><img src="images/instagram_colorful_boxes.jpg" alt="Коробки с яркими макарон ручной работы"><p>Соберём набор к празднику или определённой дате по предварительной договорённости.</p><div class="card-bottom"><span class="price">По прайсу</span><button class="add" data-name="Ассорти на определённую дату">Выбрать +</button></div></article>
+</div>
+</div></section>
+
+
+<section class="section gallery" id="gallery"><div class="inner"><div class="section-head"><div class="kicker">Сладкие моменты</div><h2>Наши десерты вживую</h2><p>Фотографии макарон и подарочных наборов. Выбери настроение для своей коробочки.</p></div>
+<div class="gallery-grid">
+<div class="gallery-item"><img src="images/instagram_box_macarons.jpg" alt="Коробка с розовыми и бирюзовыми макарон"><div class="gallery-caption">Яркие макарон с нежной начинкой</div></div>
+<div class="gallery-item"><img src="images/instagram_chocolate_strawberry.jpg" alt="Шоколадные и розовые десерты в подарочной коробке"><div class="gallery-caption">Шоколад и ягоды</div></div>
+<div class="gallery-item"><img src="images/instagram_colorful_boxes.jpg" alt="Ассорти макарон в коробках"><div class="gallery-caption">Ассорти на подарок</div></div>
+<div class="gallery-item"><img src="images/instagram_plate_macarons.jpg" alt="Макарон разных цветов на белой тарелке"><div class="gallery-caption">Разные цвета и вкусы</div></div>
+<div class="gallery-item"><img src="images/instagram_handmade_closeup.jpg" alt="Крупный план макарон с кремовой начинкой"><div class="gallery-caption">Нежная кремовая начинка</div></div>
+</div></div></section>
+
+<section class="section pricing" id="prices"><div class="inner"><div class="section-head"><div class="kicker">Актуальный прайс</div><h2>Выбери свой набор</h2><p>Цены по прайсу от 8 сентября. Добавь подходящий вариант в корзину, чтобы обсудить заказ.</p></div>
+<div class="price-layout"><div class="price-box"><h3>Макарон</h3><div class="price-row"><span>6 шт.</span><strong>1 350 ₽</strong><button class="add" data-name="Макарон — 6 шт. — 1 350 ₽">+</button></div><div class="price-row"><span>8 шт.</span><strong>1 800 ₽</strong><button class="add" data-name="Макарон — 8 шт. — 1 800 ₽">+</button></div><div class="price-row"><span>9 шт.</span><strong>2 050 ₽</strong><button class="add" data-name="Макарон — 9 шт. — 2 050 ₽">+</button></div><div class="price-row"><span>12 шт.</span><strong>2 700 ₽</strong><button class="add" data-name="Макарон — 12 шт. — 2 700 ₽">+</button></div><div class="price-row"><span>16 шт.</span><strong>3 600 ₽</strong><button class="add" data-name="Макарон — 16 шт. — 3 600 ₽">+</button></div><div class="price-row"><span>20 шт.</span><strong>4 500 ₽</strong><button class="add" data-name="Макарон — 20 шт. — 4 500 ₽">+</button></div></div>
+<div class="price-box mix-box"><h3>Моти + макарон</h3><div class="price-row"><span>4 макарон + 4 моти</span><strong>1 600 ₽</strong><button class="add" data-name="Микс — 4 макарон + 4 моти — 1 600 ₽">+</button></div><div class="price-row"><span>6 макарон + 6 моти</span><strong>2 400 ₽</strong><button class="add" data-name="Микс — 6 макарон + 6 моти — 2 400 ₽">+</button></div><div class="price-row"><span>8 макарон + 8 моти</span><strong>3 200 ₽</strong><button class="add" data-name="Микс — 8 макарон + 8 моти — 3 200 ₽">+</button></div><div class="price-row"><span>12 макарон + 4 моти</span><strong>3 400 ₽</strong><button class="add" data-name="Микс — 12 макарон + 4 моти — 3 400 ₽">+</button></div><p class="small">Количество и состав набора согласуем при оформлении заказа.</p></div></div>
+<div class="availability"><span class="availability-icon">✿</span><div><h3>Наличие и индивидуальные заказы</h3><p>Ассорти макарон с разными вкусами обычно есть в наличии — состав можно сформировать по вашему желанию. Набор к определённой дате и конкретный вкус лучше заказывать заранее. Минимальный заказ одного вкуса — <strong>от 8 штук</strong>.</p></div></div>
+</div></section>
+
+<section class="section flavors" id="flavors"><div class="inner"><div class="section-head"><div class="kicker">Авторская коллекция</div><h2>Актуальные вкусы</h2><p>Список вкусов из меню. Наличие отдельных начинок уточняйте перед заказом.</p></div><div class="flavor-list"><span>Шоколадный пломбир со смородиной</span><span>Шоколадный пломбир с вишней</span><span>Баунти</span><span>Рафаэлло</span><span>Милки Вей</span><span>Матча — малина</span><span>Базилик — клубника</span><span>Клубника — мята — ананас</span><span>Печенье Lotus</span><span>Фисташка — малина</span><span>Дубайский шоколад</span><span>Брауни</span><span>Манго — маракуйя</span><span>Ванильное мороженое с клубникой</span><span>Шоколадное мороженое</span><span>Латте — солёная карамель</span><span>Сникерс</span><span>Облепиховая карамель</span><span>Груша — дорблю</span><span>Горгонзола — инжир</span><span>Медовая груша</span><span>Маковая булочка</span><span>Клубника — кокос</span><span>Чёрная смородина</span><span>Мята — клубника</span><span>Миндаль — вишня</span><span>Малина в двойном шоколаде</span><span>Лаванда — лимон</span></div><p class="flavor-note">Любимый вкус можно заказать заранее. Для одного вкуса действует минимальный заказ от 8 штук.</p></div></section>
+
+<section class="section" id="about"><div class="inner story"><img class="story-img" src="images/instagram_handmade_closeup.jpg" alt="Макарон с нежной кремовой начинкой в руках кондитера"><div class="story-copy"><div class="kicker">О нашей кондитерской</div><h2>Красота —<br><em>в каждой детали.</em></h2><p>Макарон — это маленький десерт с большим характером. Мы уделяем внимание цвету, текстуре, начинке и тому, как будет выглядеть коробочка в руках того, кому вы её подарите.</p><p>Выбирайте любимые сочетания, собирайте ассорти и заказывайте сладкие комплименты для самых важных людей.</p><div class="story-note">«Подарок, который сначала радует глаза, а потом — вкус»</div></div></div></section>
+
+<section class="section order" id="order"><div class="inner"><div class="kicker">Просто и удобно</div><h2>Как заказать</h2><p>Выбери набор по прайсу, уточни наличие нужных вкусов и заранее согласуй дату. Работаем с ассорти и индивидуальными пожеланиями в Крыму.</p><div class="steps"><div class="step"><div class="num">01</div><h3>Выбери набор</h3><p>Добавь варианты в корзину или расскажи, какой набор представляешь.</p></div><div class="step"><div class="num">02</div><h3>Уточним детали</h3><p>Подтвердим наличие, стоимость, дату и способ получения.</p></div><div class="step"><div class="num">03</div><h3>Наслаждайся</h3><p>Забери свой заказ или договорись о доставке.</p></div></div></div></section>
+
+<section class="section contact" id="contacts"><div class="inner"><div class="kicker">Давай знакомиться</div><h2>Соберём твою коробочку?</h2><p>Напиши, чтобы подтвердить наличие, согласовать состав набора и уточнить получение или доставку по Крыму.</p><a class="button" id="contactBtn" href="#contacts">Написать для заказа ↗</a><div class="socials"><a href="#contacts" aria-label="Instagram">ig</a><a href="#contacts" aria-label="Telegram">tg</a><a href="#contacts" aria-label="WhatsApp">wa</a></div><p class="small">Перед публикацией добавь свои настоящие ссылки на соцсети и мессенджеры.</p></div></section>
+</main>
+<footer><div class="footer-inner"><div><div class="footer-logo">Maville Desserts</div>Макарон ручной работы в Крыму</div><div>Создано с любовью · © <span id="year"></span></div><a href="#home">Наверх ↑</a></div></footer>
+<aside class="cart-panel" id="panel"><div class="cart-top"><h3>Твоя корзина</h3><button class="close" id="closeCart">×</button></div><div id="items"><p class="empty">Пока пусто — добавь любимые наборы.</p></div><div class="total"><span>Выбрано наборов</span><span id="total">0</span></div><button class="button full" id="checkout">Оформить заказ</button><p class="small">Корзина пока демонстрационная. Перед запуском подключим твой WhatsApp или форму заказа.</p></aside>
+<script>
+const WHATSAPP_NUMBER = ""; // Укажи номер в международном формате, только цифры.
+const cart=[];
+const panel=document.getElementById('panel');
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('openCart').onclick=()=>panel.classList.toggle('open');
+document.getElementById('closeCart').onclick=()=>panel.classList.remove('open');
+document.querySelectorAll('.add').forEach(btn=>btn.addEventListener('click',()=>{cart.push(btn.dataset.name);render();panel.classList.add('open')}));
+function render(){document.getElementById('count').textContent=cart.length;document.getElementById('total').textContent=cart.length;
+const items=document.getElementById('items');if(!cart.length){items.innerHTML='<p class="empty">Пока пусто — добавь любимые наборы.</p>';return;}
+items.innerHTML=cart.map((name,i)=>`<div class="cart-line"><span>${name}</span><button data-i="${i}">Убрать ×</button></div>`).join('');
+items.querySelectorAll('[data-i]').forEach(b=>b.onclick=()=>{cart.splice(Number(b.dataset.i),1);render()})}
+function sendOrder(){if(!cart.length){alert('Сначала добавь набор в корзину.');return}
+if(!WHATSAPP_NUMBER){alert('Чтобы принимать заказы, добавь свой номер WhatsApp в коде сайта.');return}
+const msg='Здравствуйте! Хочу узнать стоимость и заказать:\n'+cart.map(x=>'• '+x).join('\n')+'\nПодскажите, пожалуйста, актуальные цены и доставку по Крыму.';
+window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank','noopener')}
+document.getElementById('checkout').onclick=sendOrder;
+document.getElementById('contactBtn').onclick=e=>{e.preventDefault();if(WHATSAPP_NUMBER)window.open('https://wa.me/'+WHATSAPP_NUMBER,'_blank','noopener');else alert('Добавь свой номер WhatsApp в код сайта перед публикацией.')};
+</script>
+</body></html>
